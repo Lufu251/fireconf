@@ -1,4 +1,4 @@
-"""fireconf: generate FortiGate CLI configuration from YAML and Jinja2 snippets."""
+"""fireconf: generate configuration from YAML and Jinja2 snippets."""
 
 from fireconf.generator import Config, ConfigRenderer
 
