@@ -1,0 +1,37 @@
+# Define which snippets should be used
+snippets:
+  - administrators
+  - ha
+
+# Administrators
+#
+# Key: admin name (e.g. jdoe)
+#
+# Usable Options
+# accprofile: super_admin
+# vdom: root
+# password: "ChangeMe123!"
+administrators:
+  jdoe:
+    accprofile: super_admin
+    vdom: root
+    password: "ChangeMe!"
+  asmith:
+    accprofile: prof_admin
+    vdom: root
+    password: "ChangeMe!"
+
+# High-Availability
+#
+# Usable Options
+# group_id: 1
+# group_name: fw-cluster
+# password: "ChangeMe123!"
+# interface1: ha1
+# interface2: ha2
+ha:
+  group_id: 1
+  group_name: fw-cluster
+  password: "ChangeMe123!"
+  interface1: ha1
+  interface2: ha2

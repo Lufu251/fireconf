@@ -1,0 +1,7 @@
+config system ha
+    set mode a-p
+    set group-id {{ ha.group_id }}
+    set group-name "{{ ha.group_name }}"
+    set password "{{ ha.password }}"
+    set hbdev "{{ ha.interface1 }}" 100 "{{ ha.interface2 }}" 150
+end

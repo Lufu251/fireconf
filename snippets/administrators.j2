@@ -1,0 +1,9 @@
+config system admin
+{% for name, admin in administrators.items() %}
+    edit "{{ name }}"
+        set accprofile "{{ admin.accprofile }}"
+        set vdom "{{ admin.vdom }}"
+        set password "{{ admin.password }}"
+    next
+{% endfor %}
+end
