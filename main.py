@@ -35,7 +35,7 @@ def main() -> None:
     cli_config.load_config(BASE_DIR / "configs" / "device_fgt70G.yaml")
 
     # Step 2: render the CLI snippets listed under `snippets:` in the YAML files
-    rendered_cli = renderer.render_snippets(cli_config.snippets, cli_config)
+    rendered_cli = renderer.render_snippets(cli_config)
     print_rendered(rendered_cli)
 
     # Step 3: use the rendered CLI text as variables for the guide
@@ -44,7 +44,7 @@ def main() -> None:
     guide_config.set_snippets(["test/guide"])
 
     # Step 4: render the guide
-    rendered_guide = renderer.render_snippets(guide_config.snippets, guide_config)
+    rendered_guide = renderer.render_snippets(guide_config)
     print_rendered(rendered_guide)
 
 

@@ -170,7 +170,6 @@ class ConfigRenderer:
         """Render several snippets.
 
         Args:
-            names: Snippet names to render, without the `.j2` extension.
             config: The configuration used as template variables.
 
         Returns:

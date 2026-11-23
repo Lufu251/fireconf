@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fireconf"
+version = "0.1.0"
+description = "Generate configuration from YAML and Jinja2 snippets"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+dependencies = ["pyyaml", "jinja2"]
+
+[tool.setuptools]
+packages = ["fireconf"]

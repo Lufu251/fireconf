@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+fireconf/__init__.py
+fireconf/generator.py
+fireconf.egg-info/PKG-INFO
+fireconf.egg-info/SOURCES.txt
+fireconf.egg-info/dependency_links.txt
+fireconf.egg-info/requires.txt
+fireconf.egg-info/top_level.txt
