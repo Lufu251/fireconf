@@ -4,25 +4,17 @@ Generate configuration text (e.g. FortiGate CLI) from layered YAML files and Jin
 
 You describe a device in YAML, write the config as small `.j2` snippets, and fireconf renders them.
 
-## Requirements
+## Installation
 
-- Python 3.9+
-- `pip install pyyaml jinja2`
+Requires Python 3.9+. Dependencies are installed automatically.
 
-## Project layout
-
+```bash
+pip install git+https://github.com/Lufu251/fireconf.git
 ```
-fireconf/
-    __init__.py
-    generator.py
-main.py
-configs/
-    example.yaml          # shared base values
-    device_fgt70G.yaml    # device-specific values
-snippets/
-    hostname.j2
-    test/guide.j2         # snippets can live in subfolders
-```
+
+For a specific version, add a tag: `...fireconf.git@v0.1.0`.
+
+This installs the library only. To run the example, clone the repo, because `configs/` and `snippets/` are not part of the package.
 
 ## Usage
 
